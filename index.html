@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Conference Registration</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Conference Registration</h1>
+  <form action="submit-form.php" method="POST">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+    <div>
+      <label for="affiliation">Affiliation:</label>
+      <input type="text" id="affiliation" name="affiliation" required>
+    </div>
+    <div>
+      <label for="dietary-preferences">Dietary Preferences:</label>
+      <br>
+      <input type="checkbox" id="vegetarian" name="dietary-preferences" value="vegetarian">
+      <label for="vegetarian">Vegetarian</label>
+      <br>
+      <input type="checkbox" id="vegan" name="dietary-preferences" value="vegan">
+      <label for="vegan">Vegan</label>
+      <br>
+      <input type="checkbox" id="gluten-free" name="dietary-preferences" value="gluten-free">
+      <label for="gluten-free">Gluten-free</label>
+      <br>
+     
+    </div>
+    <div>
+      <label for="workshop">Preferred Workshop:</label>
+      <select id="workshop" name="workshop" required>
+        <option value="">Select a workshop</option>
+        <option value="workshop1">Workshop 1</option>
+        <option value="workshop2">Workshop 2</option>
+        <option value="workshop3">Workshop 3</option>
+      
+      </select>
+    </div>
+    <div>
+      <label>Registration Type:</label>
+      <br>
+      <input type="radio" id="general" name="registration-type" value="general">
+      <label for="general">General Attendee</label>
+      <br>
+      <input type="radio" id="student" name="registration-type" value="student">
+      <label for="student">Student</label>
+      <br>
+      <input type="radio" id="vip" name="registration-type" value="vip">
+      <label for="vip">VIP</label>
+    </div>
+    <div>
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</body>
+</html>
